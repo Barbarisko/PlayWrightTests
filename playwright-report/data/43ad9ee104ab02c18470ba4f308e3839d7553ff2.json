@@ -1,0 +1,329 @@
+{
+  "fileId": "43ad9ee104ab02c18470ba4f308e3839d7553ff2",
+  "fileName": "Tests/example.spec.js",
+  "tests": [
+    {
+      "testId": "43ad9ee104ab02c18470ba4f308e3839d7553ff2-f6e3c9b9c04fc290fc0090c0079fce38e82b92b6",
+      "title": "User barbarskoo exists",
+      "projectName": "",
+      "location": {
+        "file": "Tests/example.spec.js",
+        "line": 6,
+        "column": 1
+      },
+      "duration": 5767,
+      "outcome": "unexpected",
+      "path": [
+        "Tests/example.spec.js:6"
+      ],
+      "results": [
+        {
+          "duration": 3035,
+          "startTime": "2021-12-08T11:09:25.692Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-12-08T11:09:25.692Z",
+              "duration": 622,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-12-08T11:09:25.979Z",
+                  "duration": 335,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(https://demoblaze.com/)",
+              "startTime": "2021-12-08T11:09:26.316Z",
+              "duration": 980,
+              "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[36masync\u001b[39m open() {\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://demoblaze.com/'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 12,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.click(a:has-text(\"Sign up\"))",
+              "startTime": "2021-12-08T11:09:27.297Z",
+              "duration": 102,
+              "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36masync\u001b[39m goToLoginWindow() {\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'a:has-text(\"Sign up\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'text=Sign up × Username: Password: Close Sign up >> input[type=\"text\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 15,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.click(text=Sign up × Username: Password: Close Sign up >> input[type=\"text\"])",
+              "startTime": "2021-12-08T11:09:27.400Z",
+              "duration": 500,
+              "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'a:has-text(\"Sign up\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'text=Sign up × Username: Password: Close Sign up >> input[type=\"text\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 16,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.fill(text=Username: Password: >> input[type=\"text\"])",
+              "startTime": "2021-12-08T11:09:27.901Z",
+              "duration": 48,
+              "snippet": "\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36masync\u001b[39m signUp(login\u001b[33m,\u001b[39m password){\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'text=Username: Password: >> input[type=\"text\"]'\u001b[39m\u001b[33m,\u001b[39m login)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'input[type=\"password\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 19,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.click(input[type=\"password\"])",
+              "startTime": "2021-12-08T11:09:27.949Z",
+              "duration": 158,
+              "snippet": "\u001b[0m \u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'text=Username: Password: >> input[type=\"text\"]'\u001b[39m\u001b[33m,\u001b[39m login)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'input[type=\"password\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[type=\"password\"]'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 20,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.fill(input[type=\"password\"])",
+              "startTime": "2021-12-08T11:09:28.107Z",
+              "duration": 35,
+              "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'input[type=\"password\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[type=\"password\"]'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m     }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 21,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.click(button:has-text(\"Sign up\"))",
+              "startTime": "2021-12-08T11:09:28.142Z",
+              "duration": 170,
+              "snippet": "\u001b[0m \u001b[90m 33 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m             \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'button:has-text(\"Sign up\")'\u001b[39m) \u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m         }}\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 34,
+                "column": 29
+              }
+            },
+            {
+              "title": "expect.toBeFalsy",
+              "startTime": "2021-12-08T11:09:28.314Z",
+              "duration": 2,
+              "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     expect(homepage\u001b[33m.\u001b[39misNotSignedUp)\u001b[33m.\u001b[39mtoBeFalsy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                   ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Tests/example.spec.js",
+                "line": 13,
+                "column": 36
+              },
+              "error": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m"
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-12-08T11:09:28.316Z",
+              "duration": 410,
+              "steps": [
+                {
+                  "title": "dialog.dismiss",
+                  "startTime": "2021-12-08T11:09:28.640Z",
+                  "duration": 2,
+                  "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m             }\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m             dialog\u001b[33m.\u001b[39mdismiss()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(()\u001b[33m=>\u001b[39m{})\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                   ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m         })\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "Page Objects/HomePage.js",
+                    "line": 30,
+                    "column": 20
+                  }
+                },
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-12-08T11:09:28.668Z",
+                  "duration": 52,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m homepage\u001b[33m.\u001b[39muserAlreadyExists()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(homepage\u001b[33m.\u001b[39misNotSignedUp)\u001b[33m.\u001b[39mtoBeFalsy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\helen\\WebstormProjects\\PlayWrightTests\\Tests\\example.spec.js:13:36\u001b[22m\n\u001b[2m    at WorkerRunner._runTestWithBeforeHooks (C:\\Users\\helen\\WebstormProjects\\PlayWrightTests\\node_modules\\@playwright\\test\\lib\\workerRunner.js:478:7)\u001b[22m",
+          "status": "failed",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "data/23ce4bc7edd2aa6ade59d94381c2de524d7d413d.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/c64ec65cc4d01b3424d101af47cc9cded387bfca.zip"
+            },
+            {
+              "name": "stdout",
+              "contentType": "text/plain",
+              "body": "Dialog msg: This user already exist.\n"
+            }
+          ]
+        },
+        {
+          "duration": 2732,
+          "startTime": "2021-12-08T11:09:29.764Z",
+          "retry": 1,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-12-08T11:09:29.765Z",
+              "duration": 465,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-12-08T11:09:30.094Z",
+                  "duration": 136,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(https://demoblaze.com/)",
+              "startTime": "2021-12-08T11:09:30.232Z",
+              "duration": 1006,
+              "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[36masync\u001b[39m open() {\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://demoblaze.com/'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 12,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.click(a:has-text(\"Sign up\"))",
+              "startTime": "2021-12-08T11:09:31.239Z",
+              "duration": 81,
+              "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36masync\u001b[39m goToLoginWindow() {\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'a:has-text(\"Sign up\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'text=Sign up × Username: Password: Close Sign up >> input[type=\"text\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 15,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.click(text=Sign up × Username: Password: Close Sign up >> input[type=\"text\"])",
+              "startTime": "2021-12-08T11:09:31.321Z",
+              "duration": 510,
+              "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'a:has-text(\"Sign up\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'text=Sign up × Username: Password: Close Sign up >> input[type=\"text\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 16,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.fill(text=Username: Password: >> input[type=\"text\"])",
+              "startTime": "2021-12-08T11:09:31.832Z",
+              "duration": 74,
+              "snippet": "\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36masync\u001b[39m signUp(login\u001b[33m,\u001b[39m password){\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'text=Username: Password: >> input[type=\"text\"]'\u001b[39m\u001b[33m,\u001b[39m login)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'input[type=\"password\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 19,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.click(input[type=\"password\"])",
+              "startTime": "2021-12-08T11:09:31.906Z",
+              "duration": 72,
+              "snippet": "\u001b[0m \u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'text=Username: Password: >> input[type=\"text\"]'\u001b[39m\u001b[33m,\u001b[39m login)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'input[type=\"password\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[type=\"password\"]'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 20,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.fill(input[type=\"password\"])",
+              "startTime": "2021-12-08T11:09:31.979Z",
+              "duration": 38,
+              "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'input[type=\"password\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[type=\"password\"]'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                        ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m     }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 21,
+                "column": 25
+              }
+            },
+            {
+              "title": "page.click(button:has-text(\"Sign up\"))",
+              "startTime": "2021-12-08T11:09:32.018Z",
+              "duration": 150,
+              "snippet": "\u001b[0m \u001b[90m 33 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m             \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m'button:has-text(\"Sign up\")'\u001b[39m) \u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m         }}\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Page Objects/HomePage.js",
+                "line": 34,
+                "column": 29
+              }
+            },
+            {
+              "title": "expect.toBeFalsy",
+              "startTime": "2021-12-08T11:09:32.171Z",
+              "duration": 2,
+              "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     expect(homepage\u001b[33m.\u001b[39misNotSignedUp)\u001b[33m.\u001b[39mtoBeFalsy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                   ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "Tests/example.spec.js",
+                "line": 13,
+                "column": 36
+              },
+              "error": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m"
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-12-08T11:09:32.174Z",
+              "duration": 323,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-12-08T11:09:32.450Z",
+                  "duration": 37,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m homepage\u001b[33m.\u001b[39muserAlreadyExists()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(homepage\u001b[33m.\u001b[39misNotSignedUp)\u001b[33m.\u001b[39mtoBeFalsy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\helen\\WebstormProjects\\PlayWrightTests\\Tests\\example.spec.js:13:36\u001b[22m\n\u001b[2m    at WorkerRunner._runTestWithBeforeHooks (C:\\Users\\helen\\WebstormProjects\\PlayWrightTests\\node_modules\\@playwright\\test\\lib\\workerRunner.js:478:7)\u001b[22m",
+          "status": "failed",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "data/6258f93a91c93a9297ea80cde8251005da576170.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/e632f58414f733680f714f52c48c9181982b3676.zip"
+            }
+          ]
+        }
+      ],
+      "ok": false
+    }
+  ]
+}

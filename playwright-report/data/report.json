@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "fileId": "43ad9ee104ab02c18470ba4f308e3839d7553ff2",
+      "fileName": "Tests/example.spec.js",
+      "tests": [
+        {
+          "testId": "43ad9ee104ab02c18470ba4f308e3839d7553ff2-f6e3c9b9c04fc290fc0090c0079fce38e82b92b6",
+          "title": "User barbarskoo exists",
+          "projectName": "",
+          "location": {
+            "file": "Tests/example.spec.js",
+            "line": 6,
+            "column": 1
+          },
+          "duration": 5767,
+          "outcome": "unexpected",
+          "path": [
+            "Tests/example.spec.js:6"
+          ],
+          "ok": false
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "expected": 0,
+        "unexpected": 1,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": false,
+        "duration": 5767
+      }
+    }
+  ],
+  "projectNames": [
+    ""
+  ],
+  "stats": {
+    "total": 1,
+    "expected": 0,
+    "unexpected": 1,
+    "flaky": 0,
+    "skipped": 0,
+    "ok": false,
+    "duration": 5767
+  }
+}
